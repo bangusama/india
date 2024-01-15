@@ -18,6 +18,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-basis: 100px;
 }
 
 nav *{
@@ -29,9 +30,12 @@ nav *{
 nav ul{
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    list-style-type: none;
 }
 
+img{
+    width: 100%;
+}
 
 
 .references {
