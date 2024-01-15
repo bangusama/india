@@ -4,8 +4,154 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+
+        .background1, .background1_1 {
+            width: 1500px;
+            height: 700px;
+            margin: -8px;
+            background-color: black;
+            position: absolute;
+        }
+
+        .background1_header {
+            width: 700px;
+            font-size: 120px;
+            color: white;
+            position: absolute;
+            top: 200px;
+            left: 400px;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .navigation {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2em 1em;
+            width: 1500px;
+            height: 80px;
+            margin: -8px;
+            position: fixed;
+            background-color: rgb(109, 9, 9);
+            background-image: linear-gradient(rgb(109, 9, 9), rgb(109, 9, 9), rgba(20,20,20,1));
+        }
+
+        .navigation ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .navigation li {
+            margin-right: 20px;
+            position: relative;
+        }
+
+        .navigation li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: rgb(62, 0, 0);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            align-items: center;
+        }
+
+        .navigation li:hover ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .navigation li ul li {
+            margin: 15px;
+            align-items: center;
+        }
+
+        li a {
+            color: white;
+            font-size: 20px;
+            padding-top: 5px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: lighter;
+            text-decoration: none;
+        }
+
+        li a.active {
+            background-color: #810d0d;
+            color: white;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #4b4b4d;
+        }
+
+        .logo1 {
+            width: 100px;
+            position: absolute;
+            left: 30px;
+            list-style-type: none;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="background1">
+        <img class="background1_1" src="Images/background1.avif">
+        <header class="background1_header">
+            MAPUA Game Consensus
+        </header>
+    </div>
+    <div class="navigation">
+        <img class="logo1" src="Images/mgc-high-resolution-logo-white.png"> <!-- source idk how to fix-->
+        <ul>
+            <li>
+                <a href="announcements.html" style="padding: 15px;">Announcements</a> <!-- rename link to file name-->
+                <ul>
+                    <li><a href="#introduction">Introduction</a></li> <!-- clickable link to proceed to <section id= "introduction"> -->
+                    <li><a href="#discussion">Discussion</a></li> 
+                    <li><a href="#reference">Reference</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="announcements.html" style="padding: 15px;">Media</a>
+                <ul>
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#discussion">Discussion</a></li>
+                    <li><a href="#reference">Reference</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="announcements.html" style="padding: 15px;">Merchant</a>
+                <ul>
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#discussion">Discussion</a></li>
+                    <li><a href="#reference">Reference</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="announcements.html" style="padding: 15px;">Partnerships</a>
+                <ul>
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#discussion">Discussion</a></li>
+                    <li><a href="#reference">Reference</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="announcements.html" style="padding: 15px;">About us</a>
+                <ul>
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#discussion">Discussion</a></li>
+                    <li><a href="#reference">Reference</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
